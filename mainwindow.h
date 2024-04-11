@@ -8,6 +8,7 @@
 #include "unorderedmapvector.h"
 #include "hashtable.h"
 #include "ttable.h"
+#include "AVLTree.h"
 #include "polynom.h"
 
 #include <QMainWindow>
@@ -25,7 +26,8 @@ struct Tables
         "Unordered map on vector",
         "Ordered map on list",
         "Unordered map on list",
-        "Hash table"
+        "Hash table",
+        "AVL Tree"
     };
     unsigned int mode;
     TTable<int, Polynom<int>>** container;
@@ -39,6 +41,7 @@ struct Tables
         container[2] = new TOrderedMapList<int, Polynom<int>>;
         container[3] = new TUnorderedMapList<int, Polynom<int>>;
         container[4] = new THashTable<int, Polynom<int>>;
+        container[5] = new AVLTree<int, Polynom<int>>;
 
     }
     void Add(int table_id, int key, const Polynom<int>& value)
