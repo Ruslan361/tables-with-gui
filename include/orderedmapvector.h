@@ -5,7 +5,7 @@
 
 
 template <typename TKey, typename TValue>
-class TOrderedMapVector : public TTable<TKey, TValue>
+class TOrderedMapVector : public TContainer<TKey, TValue>
 {
 private:
 	Vector<TPair<TKey, TValue>> values;

@@ -169,6 +169,7 @@ Iterator<T> TSingleLinkedList<T>::Insert(const Iterator<T>& iter, const T& eleme
 	if (iter.node == last)
 	{
 		Add(element);
+		std::swap(iter.node->value, iter.node->next->value);
 		return Iterator<T>(last);
 	}
 	Node<T>* current = new Node<T>(element, iter.node->next);

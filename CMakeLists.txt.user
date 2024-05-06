@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 10.0.2, 2024-04-11T14:22:32. -->
+<!-- Written by QtCreator 13.0.0, 2024-05-06T01:39:10. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{fae1ed8f-e7ce-4dc7-bfca-a5103b0a16fa}</value>
+  <value type="QByteArray">{6dd59fa4-e80f-489a-bf31-eaf4a46c10c5}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -37,10 +37,11 @@
    <value type="bool" key="EditorConfiguration.MouseHiding">true</value>
    <value type="bool" key="EditorConfiguration.MouseNavigation">true</value>
    <value type="int" key="EditorConfiguration.PaddingMode">1</value>
+   <value type="int" key="EditorConfiguration.PreferAfterWhitespaceComments">0</value>
    <value type="bool" key="EditorConfiguration.PreferSingleLineComments">false</value>
    <value type="bool" key="EditorConfiguration.ScrollWheelZooming">true</value>
    <value type="bool" key="EditorConfiguration.ShowMargin">false</value>
-   <value type="int" key="EditorConfiguration.SmartBackspaceBehavior">0</value>
+   <value type="int" key="EditorConfiguration.SmartBackspaceBehavior">2</value>
    <value type="bool" key="EditorConfiguration.SmartSelectionChanging">true</value>
    <value type="bool" key="EditorConfiguration.SpacesForTabs">true</value>
    <value type="int" key="EditorConfiguration.TabKeyBehavior">0</value>
@@ -76,6 +77,7 @@
     <value type="bool" key="ClangTools.BuildBeforeAnalysis">true</value>
     <value type="QString" key="ClangTools.DiagnosticConfig">Builtin.DefaultTidyAndClazy</value>
     <value type="int" key="ClangTools.ParallelJobs">6</value>
+    <value type="bool" key="ClangTools.PreferConfigFile">true</value>
     <valuelist type="QVariantList" key="ClangTools.SelectedDirs"/>
     <valuelist type="QVariantList" key="ClangTools.SelectedFiles"/>
     <valuelist type="QVariantList" key="ClangTools.SuppressedDiagnostics"/>
@@ -87,12 +89,12 @@
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Unnamed2</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Unnamed2</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{08d23f01-e0a7-43a2-b288-3a437c63bf03}</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{eb9d2167-0b86-4a79-a1dd-2f0d0fcf0972}</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">3</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="QString" key="CMake.Build.Type">Debug</value>
     <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
@@ -100,14 +102,14 @@
     <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
     <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_GENERATOR:STRING=Unix Makefiles
 -DCMAKE_BUILD_TYPE:STRING=Debug
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
+-DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{BuildConfig:BuildDirectory:NativeFilePath}/.qtc/package-manager/auto-setup.cmake
 -DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
 -DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
 -DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-Unnamed2-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/Desktop/git/tables-with-gui/build/Desktop-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -157,13 +159,13 @@
     <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
     <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_GENERATOR:STRING=Unix Makefiles
 -DCMAKE_BUILD_TYPE:STRING=Release
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
+-DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{BuildConfig:BuildDirectory:NativeFilePath}/.qtc/package-manager/auto-setup.cmake
 -DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
 -DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
 -DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-Unnamed2-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/Desktop/git/tables-with-gui/build/Desktop-Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -173,7 +175,6 @@
       <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
       <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
@@ -190,7 +191,6 @@
       <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
       <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
@@ -213,13 +213,13 @@
     <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
     <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_GENERATOR:STRING=Unix Makefiles
 -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
+-DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{BuildConfig:BuildDirectory:NativeFilePath}/.qtc/package-manager/auto-setup.cmake
 -DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
 -DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
 -DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-Unnamed2-RelWithDebInfo</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/Desktop/git/tables-with-gui/build/Desktop-RelWithDebInfo</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -267,14 +267,14 @@
     <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
     <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_GENERATOR:STRING=Unix Makefiles
 -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
+-DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{BuildConfig:BuildDirectory:NativeFilePath}/.qtc/package-manager/auto-setup.cmake
 -DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
 -DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
 -DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-Unnamed2-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/Desktop/git/tables-with-gui/build/Desktop-Profile</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -284,7 +284,6 @@
       <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
       <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
@@ -301,7 +300,6 @@
       <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
       <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
@@ -324,13 +322,13 @@
     <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
     <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_GENERATOR:STRING=Unix Makefiles
 -DCMAKE_BUILD_TYPE:STRING=MinSizeRel
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
+-DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{BuildConfig:BuildDirectory:NativeFilePath}/.qtc/package-manager/auto-setup.cmake
 -DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
 -DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
 -DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-Unnamed2-MinSizeRel</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/Desktop/git/tables-with-gui/build/Desktop-MinSizeRel</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
@@ -388,740 +386,85 @@
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">untitled2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.untitled2</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">untitled2</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+    <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph dwarf,4096 -F 250</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">sample_polynom</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.sample_polynom</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">sample_polynom</value>
+    <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/ruslan/build-untitled2-Unnamed2-Debug</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/ruslan/Desktop/git/tables-with-gui/build/Desktop-Debug</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">sample_polynom</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.sample_polynom</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">sample_polynom</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+    <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph dwarf,4096 -F 250</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">sample_unordered_map</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.sample_unordered_map</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">sample_unordered_map</value>
+    <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/ruslan/build-untitled2-Unnamed2-Debug</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/ruslan/Desktop/git/tables-with-gui/build/Desktop-Debug</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">sample_unordered_map</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.sample_unordered_map</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">sample_unordered_map</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+    <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph dwarf,4096 -F 250</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">test_untitled2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.test_untitled2</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">test_untitled2</value>
+    <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/ruslan/build-untitled2-Unnamed2-Debug</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/ruslan/Desktop/git/tables-with-gui/build/Desktop-Debug/test</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.3">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
     <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">test_untitled2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.test_untitled2</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">test_untitled2</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+    <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph dwarf,4096 -F 250</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">untitled2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.untitled2</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">untitled2</value>
+    <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/ruslan/build-untitled2-Unnamed2-Debug/test</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/ruslan/Desktop/git/tables-with-gui/build/Desktop-Debug</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">4</value>
   </valuemap>
  </data>
  <data>
-  <variable>ProjectExplorer.Project.Target.1</variable>
-  <valuemap type="QVariantMap">
-   <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Qt 5.15.2 (anaconda3)</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Qt 5.15.2 (anaconda3)</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{37801414-2aea-4869-8564-357ad113bc16}</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">-1</value>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
-    <value type="QString" key="CMake.Build.Type">Debug</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=Debug
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-Qt_5_15_2_anaconda3_temporary-Debug</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="CMake.Build.Type">Release</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=Release
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-Qt_5_15_2_anaconda3_temporary-Release</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
-    <value type="QString" key="CMake.Build.Type">RelWithDebInfo</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-Qt_5_15_2_anaconda3_temporary-RelWithDebInfo</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release with Debug Information</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.3">
-    <value type="QString" key="CMake.Build.Type">RelWithDebInfo</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-Qt_5_15_2_anaconda3_temporary-Profile</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.4">
-    <value type="QString" key="CMake.Build.Type">MinSizeRel</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=MinSizeRel
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-Qt_5_15_2_anaconda3_temporary-MinSizeRel</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Minimum Size Release</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.5">
-    <value type="QString" key="CMake.Build.Type">Debug</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=Debug
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="QString" key="CMake.Source.Directory">/home/ruslan/untitled2</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/untitled2/build</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.BuildConfigurationCount">6</value>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">0</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Deploy</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.DeployConfiguration.CustomData"/>
-    <value type="bool" key="ProjectExplorer.DeployConfiguration.CustomDataEnabled">false</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.DefaultDeployConfiguration</value>
-   </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">0</value>
-  </valuemap>
- </data>
- <data>
-  <variable>ProjectExplorer.Project.Target.2</variable>
-  <valuemap type="QVariantMap">
-   <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Unnamed</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Unnamed</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{c56c815c-ba30-49ea-881c-9c2a771b54b1}</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">-1</value>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
-    <value type="QString" key="CMake.Build.Type">Debug</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=Debug
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DCMAKE_SYSROOT:PATH=/home/ruslan/forms
--DCMAKE_C_COMPILER_TARGET:STRING=x86_64-linux-gnu
--DCMAKE_CXX_COMPILER_TARGET:STRING=x86_64-linux-gnu
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-1-Debug</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="CMake.Build.Type">Release</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=Release
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DCMAKE_SYSROOT:PATH=/home/ruslan/forms
--DCMAKE_C_COMPILER_TARGET:STRING=x86_64-linux-gnu
--DCMAKE_CXX_COMPILER_TARGET:STRING=x86_64-linux-gnu
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-1-Release</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
-    <value type="QString" key="CMake.Build.Type">RelWithDebInfo</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DCMAKE_SYSROOT:PATH=/home/ruslan/forms
--DCMAKE_C_COMPILER_TARGET:STRING=x86_64-linux-gnu
--DCMAKE_CXX_COMPILER_TARGET:STRING=x86_64-linux-gnu
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-1-RelWithDebInfo</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release with Debug Information</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.3">
-    <value type="QString" key="CMake.Build.Type">RelWithDebInfo</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DCMAKE_SYSROOT:PATH=/home/ruslan/forms
--DCMAKE_C_COMPILER_TARGET:STRING=x86_64-linux-gnu
--DCMAKE_CXX_COMPILER_TARGET:STRING=x86_64-linux-gnu
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-1-Profile</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.4">
-    <value type="QString" key="CMake.Build.Type">MinSizeRel</value>
-    <value type="int" key="CMake.Configure.BaseEnvironment">2</value>
-    <value type="bool" key="CMake.Configure.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="CMake.Configure.UserEnvironmentChanges"/>
-    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_BUILD_TYPE:STRING=MinSizeRel
--DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{buildDir}/.qtc/package-manager/auto-setup.cmake
--DCMAKE_SYSROOT:PATH=/home/ruslan/forms
--DCMAKE_C_COMPILER_TARGET:STRING=x86_64-linux-gnu
--DCMAKE_CXX_COMPILER_TARGET:STRING=x86_64-linux-gnu
--DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
--DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
--DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
--DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
--DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/ruslan/build-untitled2-1-MinSizeRel</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">all</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
-    </valuemap>
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
-     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="CMakeProjectManager.MakeStep.BuildPreset"></value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
-       <value type="QString">clean</value>
-      </valuelist>
-      <value type="bool" key="CMakeProjectManager.MakeStep.ClearSystemEnvironment">false</value>
-      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.UserEnvironmentChanges"/>
-      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
-     </valuemap>
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
-    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
-    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Minimum Size Release</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
-   </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.BuildConfigurationCount">5</value>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
-    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
-     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">0</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Deploy</value>
-     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Deploy</value>
-    </valuemap>
-    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">1</value>
-    <valuemap type="QVariantMap" key="ProjectExplorer.DeployConfiguration.CustomData"/>
-    <value type="bool" key="ProjectExplorer.DeployConfiguration.CustomDataEnabled">false</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.DefaultDeployConfiguration</value>
-   </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">0</value>
-  </valuemap>
- </data>
- <data>
   <variable>ProjectExplorer.Project.TargetCount</variable>
-  <value type="qlonglong">3</value>
+  <value type="qlonglong">1</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.Updater.FileVersion</variable>

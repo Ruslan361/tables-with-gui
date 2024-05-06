@@ -5,7 +5,7 @@
 
 
 template <typename TKey, typename TValue>
-class TUnorderedMapList : public TTable<TKey, TValue>
+class TUnorderedMapList : public TContainer<TKey, TValue>
 {
 private:
 	TSingleLinkedList<TPair<TKey, TValue>> values;

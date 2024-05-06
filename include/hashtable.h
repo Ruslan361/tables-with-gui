@@ -18,7 +18,7 @@ public:
 };
 
 template <typename TKey, typename TValue, typename HashGenerator = DefaultHashGenerator<TKey>>
-class THashTable : public TTable<TKey, TValue>
+class THashTable : public TContainer<TKey, TValue>
 {
     Vector<TUnorderedMapList<TKey, TValue>> batches;
     HashGenerator generator;

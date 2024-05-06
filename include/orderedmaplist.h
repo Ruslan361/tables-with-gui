@@ -5,7 +5,7 @@
 
 
 template <typename TKey, typename TValue>
-class TOrderedMapList : public TTable<TKey, TValue>
+class TOrderedMapList : public TContainer<TKey, TValue>
 {
 private:
 	TSingleLinkedList<TPair<TKey, TValue>> values;
@@ -66,11 +66,11 @@ public:
 		{
 			throw std::invalid_argument("you can not add value because key is exist in TUnorderedMapVector");
 		}
-		//if (values.IsEmpty())
-		//{
-		//	values.Add(TPair<TKey, TValue>(key, value));
-		//	return;
-		//}
+		if (values.IsEmpty())
+		{
+			values.Add(TPair<TKey, TValue>(key, value));
+			return;
+		}
 		for (auto it = values.begin(); it != values.end(); it++)
 		{
 			auto elem = *it;

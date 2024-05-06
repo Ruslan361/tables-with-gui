@@ -11,6 +11,7 @@
 #include "AVLTree.h"
 #include "polynom.h"
 
+
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -30,19 +31,18 @@ struct Tables
         "AVL Tree"
     };
     unsigned int mode;
-    TTable<int, Polynom<int>>** container;
+    TContainer<int, Polynom<int>>** container;
     Tables()
     {
         mode = 0;
         int count = names.count();
-        container = new TTable<int, Polynom<int>>*[count];
+        container = new TContainer<int, Polynom<int>>*[count];
         container[0] = new TOrderedMapVector<int, Polynom<int>>;
         container[1] = new TUnorderedMapVector<int, Polynom<int>>;
         container[2] = new TOrderedMapList<int, Polynom<int>>;
         container[3] = new TUnorderedMapList<int, Polynom<int>>;
         container[4] = new THashTable<int, Polynom<int>>;
         container[5] = new AVLTree<int, Polynom<int>>;
-
     }
     void Add(int table_id, int key, const Polynom<int>& value)
     {

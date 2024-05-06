@@ -6,332 +6,190 @@
 #include "ttable.h"
 
 template <typename TKey, typename TValue>
-class AVLTreeNode 
-{
+class AVLTree : public TContainer<TKey, TValue> {
+private:
+    struct Node {
+        TKey key;
+        TValue value;
+        Node* left;
+        Node* right;
+        int height;
+
+        Node(const TKey& k, const TValue& v) : key(k), value(v), left(nullptr), right(nullptr), height(1) {}
+    };
+
+    Node* root;
+
+    // Вспомогательные методы
+    int height(Node* node);
+    int balanceFactor(Node* node);
+    void updateHeight(Node* node);
+    Node* rotateRight(Node* node);
+    Node* rotateLeft(Node* node);
+    Node* balance(Node* node);
+    Node* insert(Node* node, const TKey& key, const TValue& value);
+    Node* findMin(Node* node);
+    Node* removeMin(Node* node);
+    Node* remove(Node* node, const TKey& key);
+    void destroy(Node* node);
+    void getKeys(Node* node, TSingleLinkedList<TKey>& keys);
+
 public:
-    AVLTreeNode* left;
-    AVLTreeNode* right;
-    int heigh; 
-    TKey key;
-    TValue value;
-    AVLTreeNode(const TKey& key, const TValue& value, AVLTreeNode* left, AVLTreeNode* right, int heigh)
-    {
-        this->left = left;
-        this->right = right;
-        this->heigh = heigh;
-        this->key = key;
-        this->value = value;
-    }
-    AVLTreeNode(const TKey& key, const TValue& value) : AVLTreeNode(key, value, nullptr, nullptr, 1) {}
-    void CalculateHeight()
-    {
-        int left_height = 0;
-        if (left != nullptr)
-        {
-            left_height = left->heigh;
-        }
-        int right_height = 0;
-        if (right != nullptr)
-        {
-            right_height = right->heigh;
-        }
-        int max_height = left_height > right_height ? left_height : right_height;
-        heigh = max_height + 1;
-    }
+    AVLTree() : root(nullptr) {}
+    ~AVLTree() { destroy(root); }
+
+    // Методы из TTable
+    void Add(const TKey& key, const TValue& value) override { root = insert(root, key, value); }
+    void Add(const TPair<TKey, TValue>& pair) override { Add(pair.key, pair.value); }
+    void Remove(const TKey& key) override { root = remove(root, key); }
+    bool Search(const TKey& key, TValue& value) const override;
+    TSingleLinkedList<TKey> GetKeys() override;
+    TSingleLinkedList<TValue> GetValues(const TKey& key) override;
 };
 
 template<typename TKey, typename TValue>
-void GetKeysNode(AVLTreeNode<TKey, TValue>* node, TSingleLinkedList<TKey>& list)
-{
-    if (node == nullptr) return;
-    if (node->left) GetKeysNode(node->left, list);
-    list.Add(node->key);
-    if (node->right) GetKeysNode(node->right, list);
-
-    return;
+int AVLTree<TKey, TValue>::height(Node* node) {
+    return node ? node->height : 0;
 }
 
 template<typename TKey, typename TValue>
-void DeleteNodes(AVLTreeNode<TKey, TValue>* node)
-{
-    if (node == nullptr) return;
-    if (node->left) DeleteNodes(node->left);
-    if (node->right) DeleteNodes(node->right);
-    delete node;
-    return;
+int AVLTree<TKey, TValue>::balanceFactor(Node* node) {
+    return height(node->right) - height(node->left);
 }
 
 template<typename TKey, typename TValue>
-AVLTreeNode<TKey, TValue>* RightRotate(AVLTreeNode<TKey, TValue>* y) {
-    AVLTreeNode<TKey, TValue>* x = y->left;
-    AVLTreeNode<TKey, TValue>* T2 = x->right;
-
-    x->right = y;
-    y->left = T2;
-
-    x->CalculateHeight();
-    y->CalculateHeight();
-
-    // y->height = max(height(y->left), height(y->right)) + 1;
-    // x->height = max(height(x->left), height(x->right)) + 1;
-
-    return x;
+void AVLTree<TKey, TValue>::updateHeight(Node* node) {
+    int leftHeight = height(node->left);
+    int rightHeight = height(node->right);
+    node->height = (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
 }
+
 template<typename TKey, typename TValue>
-AVLTreeNode<TKey, TValue>* LeftRotate(AVLTreeNode<TKey, TValue>* x) {
-    AVLTreeNode<TKey, TValue>* y = x->right;
-    AVLTreeNode<TKey, TValue>* T2 = y->left;
-
-    y->left = x;
-    x->right = T2;
-
-    x->CalculateHeight();
-    y->CalculateHeight();
-    //x->height = max(height(x->left), height(x->right)) + 1;
-    //y->height = max(height(y->left), height(y->right)) + 1;
-
-    return y;
+typename AVLTree<TKey, TValue>::Node* AVLTree<TKey, TValue>::rotateRight(Node* node) {
+    Node* leftChild = node->left;
+    node->left = leftChild->right;
+    leftChild->right = node;
+    updateHeight(node);
+    updateHeight(leftChild);
+    return leftChild;
 }
-template<typename TKey, typename TValue>
-void PrintGraph(AVLTreeNode<TKey, TValue>* root)
-{
 
-    if (root == nullptr)
-        return;
-    if (root->left != nullptr)
-    {
-        std::cout << root->key << "-" << root->left->key << std::endl;
-        PrintGraph(root->left);
-        
+template<typename TKey, typename TValue>
+typename AVLTree<TKey, TValue>::Node* AVLTree<TKey, TValue>::rotateLeft(Node* node) {
+    Node* rightChild = node->right;
+    node->right = rightChild->left;
+    rightChild->left = node;
+    updateHeight(node);
+    updateHeight(rightChild);
+    return rightChild;
+}
+
+template<typename TKey, typename TValue>
+typename AVLTree<TKey, TValue>::Node* AVLTree<TKey, TValue>::balance(Node* node) {
+    updateHeight(node);
+    if (balanceFactor(node) == 2) {
+        if (balanceFactor(node->right) < 0)
+            node->right = rotateRight(node->right);
+        return rotateLeft(node);
     }
-
-    if (root->right != nullptr)
-    {
-        std::cout << root->key << "-" << root->right->key << std::endl;
-        PrintGraph(root->right);
-        
+    if (balanceFactor(node) == -2) {
+        if (balanceFactor(node->left) > 0)
+            node->left = rotateLeft(node->left);
+        return rotateRight(node);
     }
-    
-}
-template<typename TKey, typename TValue>
-int GetHeight(AVLTreeNode<TKey, TValue>* node)
-{
-    if (node == nullptr)
-        return 0;
-    else
-        return node->heigh;
-}
-template<typename TKey, typename TValue>
-AVLTreeNode<TKey, TValue>* Insert(AVLTreeNode<TKey, TValue>* node, const TKey& key, const TValue& value)
-{
-    if (node == nullptr)
-    {
-        AVLTreeNode<TKey, TValue>* ptr = new AVLTreeNode<TKey, TValue>(key, value);
-        return ptr;
-    }
-    if (node->key > key)
-        node->left = Insert(node->left, key, value);
-    else if (node->key < key)
-        node->right = Insert(node->right, key, value);
-    else
-        throw std::invalid_argument("key is exist");
-
-    int balance = GetHeight(node->right) - GetHeight(node->left);
-    if (balance < -1)
-    {
-        return RightRotate<TKey, TValue>(node);
-    }
-    if (balance > 1)
-    {
-        return LeftRotate<TKey, TValue>(node);
-    }
-    node->CalculateHeight();
     return node;
-    //node->CalculateHeight();
 }
 
 template<typename TKey, typename TValue>
-AVLTreeNode<TKey, TValue>* SearchNode(const AVLTreeNode<TKey, TValue>* root, const TKey& key)
-{
-    if (root == nullptr)
-        {
-            return nullptr;
-        }
-        AVLTreeNode<TKey, TValue>* current = root;
-        do
-        {
-            if (key == current->key)
-            {
-                return current;
-            }
-            else if (key > current->key)
-            {
-                current = current->right;
-            }
-            else
-            {
-                current = current->left;
-            }
-        } while (current != nullptr);
-        return nullptr;
-}
-template<typename TKey, typename TValue>
-AVLTreeNode<TKey, TValue>* SearchNearestBigger(const AVLTreeNode<TKey, TValue>* root)
-{
-    if (root == nullptr) return nullptr;
-    if (root->right == nullptr) return nullptr;
-    AVLTreeNode<TKey, TValue>* current = root->right;
-    while (current->left != nullptr)
-    {
-        current = current->left;
-    }
-    return current;
-}
-
-template<typename TKey, typename TValue>
-AVLTreeNode<TKey, TValue>* DeleteNode(AVLTreeNode<TKey, TValue>* root, const TKey& key)
-{
-    if (root == nullptr) return nullptr;
-    if ((root->left == nullptr) && (root->right == nullptr))
-    {
-        if (key == root->key)
-        {
-            delete root;
-            root = nullptr;
-        }
-        
-    }
-    else if (root->right == nullptr)
-    {
-        if (root->left->key == key)
-        {
-            delete root->left;
-            root->left = nullptr;
-            // root->heigh = 1;
-            // return root;
-        }
-    }
-    else if (root->left == nullptr)
-    {
-        if (root->right->key == key)
-        {
-            delete root->right;
-            root->left = nullptr;
-            // root->heigh = 1;
-            // return root;
-        }
-
-    }
-    else{
-    if (key < root->key)
-    {
-        root->left = DeleteNode(root->left, key);
-
-    }
-    else if (key > root->key)
-    {
-        root->right = DeleteNode(root->right, key);
-
-    }
+typename AVLTree<TKey, TValue>::Node* AVLTree<TKey, TValue>::insert(Node* node, const TKey& key, const TValue& value) {
+    if (!node) return new Node(key, value);
+    if (key < node->key)
+        node->left = insert(node->left, key, value);
+    else if (key > node->key)
+        node->right = insert(node->right, key, value);
     else
-    {
-        AVLTreeNode<TKey, TValue>* nearest = SearchNearestBigger(root);
-        TKey n_key = nearest->key;
-        TValue n_value = nearest->value;
-        root->right = DeleteNode(root->right, n_key);
-        root->value = n_value;
-        root->key = n_key;
-
-    }
-    int balance = GetHeight(root->right) - GetHeight(root->left);
-    if (balance < -1)
-    {
-        return RightRotate<TKey, TValue>(root);
-    }
-    if (balance > 1)
-    {
-        return LeftRotate<TKey, TValue>(root);
-    }
-    root->CalculateHeight();
-    }
-    return root;
+        node->value = value;
+    return balance(node);
 }
 
- template <typename TKey, typename TValue>
- class AVLTree : public TTable<TKey, TValue>
- {
-    AVLTreeNode<TKey, TValue>* parent;
-public:
-    AVLTree()
-    {
-        parent = nullptr;
-    }
-    void Add(const TKey& key, const TValue& value)
-    {
-        parent = Insert(parent, key, value);
+template<typename TKey, typename TValue>
+typename AVLTree<TKey, TValue>::Node* AVLTree<TKey, TValue>::findMin(Node* node) {
+    return node->left ? findMin(node->left) : node;
+}
 
+template<typename TKey, typename TValue>
+typename AVLTree<TKey, TValue>::Node* AVLTree<TKey, TValue>::removeMin(Node* node) {
+    if (!node->left)
+        return node->right;
+    node->left = removeMin(node->left);
+    return balance(node);
+}
+
+template<typename TKey, typename TValue>
+typename AVLTree<TKey, TValue>::Node* AVLTree<TKey, TValue>::remove(Node* node, const TKey& key) {
+    if (!node) return nullptr;
+    if (key < node->key)
+        node->left = remove(node->left, key);
+    else if (key > node->key)
+        node->right = remove(node->right, key);
+    else {
+        Node* leftChild = node->left;
+        Node* rightChild = node->right;
+        delete node;
+        if (!rightChild) return leftChild;
+        Node* minNode = findMin(rightChild);
+        minNode->right = removeMin(rightChild);
+        minNode->left = leftChild;
+        return balance(minNode);
     }
-    void Add(const TPair<TKey, TValue>& pair)
-    {
-        Add(pair.key, pair.value);
-    }
-    bool Search(const TKey& key, TValue& value) const
-    {
-        if (parent == nullptr)
-        {
-            return false;
+    return balance(node);
+}
+
+template<typename TKey, typename TValue>
+void AVLTree<TKey, TValue>::destroy(Node* node) {
+    if (!node) return;
+    destroy(node->left);
+    destroy(node->right);
+    delete node;
+}
+
+template<typename TKey, typename TValue>
+bool AVLTree<TKey, TValue>::Search(const TKey& key, TValue& value) const {
+    Node* current = root;
+    while (current) {
+        if (key < current->key)
+            current = current->left;
+        else if (key > current->key)
+            current = current->right;
+        else {
+            value = current->value;
+            return true;
         }
-        AVLTreeNode<TKey, TValue>* current = parent;
-        do
-        {
-            if (key == current->key)
-            {
-                value = current->value;
-                return true;
-            }
-            else if (key > current->key)
-            {
-                current = current->right;
-            }
-            else
-            {
-                current = current->left;
-            }
-        } while (current != nullptr);
-        return false;
     }
+    return false;
+}
 
-    void Remove(const TKey& key)
-    {
-        parent = DeleteNode(parent, key);
-        //std::cout << std::endl << "new tree" << std::endl;
-        //PrintGraph(parent);
-    }
-    TSingleLinkedList<TKey> GetKeys()
-    {
-        TSingleLinkedList<TKey> keys;
-        GetKeysNode(parent, keys);
-        return keys;
-    }
-    ~AVLTree()
-    {
-        DeleteNodes(parent);
-    }
-    TSingleLinkedList<TValue> GetValues(const TKey& key)
-    {
-        TSingleLinkedList<TValue> values;
-        TValue value;
-        if (Search(key, value))
-        {
-            values.Add(value);
-        }
-        return values;
-    }
-// //    void Add(const TPair<TKey, TValue>& pair);
-// //    void Remove(const TKey& key);
-// //    bool Search(const TKey& key, TValue& value) const;
-// //    TSingleLinkedList<TKey> GetKeys();
-// //    TSingleLinkedList<TValue> GetValues(const TKey& key);
- };
+template<typename TKey, typename TValue>
+void AVLTree<TKey, TValue>::getKeys(Node* node, TSingleLinkedList<TKey>& keys) {
+    if (!node) return;
+    getKeys(node->left, keys);
+    keys.Add(node->key);
+    getKeys(node->right, keys);
+}
 
+template<typename TKey, typename TValue>
+TSingleLinkedList<TKey> AVLTree<TKey, TValue>::GetKeys() {
+    TSingleLinkedList<TKey> keys;
+    getKeys(root, keys);
+    return keys;
+}
+
+template<typename TKey, typename TValue>
+TSingleLinkedList<TValue> AVLTree<TKey, TValue>::GetValues(const TKey& key) {
+    TSingleLinkedList<TValue> values;
+    TValue value;
+    if (Search(key, value))
+        values.Add(value);
+    return values;
+}
 #endif // AVLTREE_H
